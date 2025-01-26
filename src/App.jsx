@@ -1,9 +1,14 @@
-
+import Footer from "./component/Footer"
+import Header from "./component/Header"
 function App() {
   return (
     <>
-     <h1>hello</h1>
-     <h2>I am inside app Component</h2>
+      <Header />
+      <section>
+        i am body section
+      </section>
+      <Footer/>
+
     </>
   )
 }
