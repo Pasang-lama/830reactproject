@@ -1,28 +1,31 @@
-.banner-items{
+.banner-items {
     position: relative;
-    .banner-content{
+
+    .banner-content {
         position: absolute;
         top: 50%;
         left: 5%;
         transform: translate(0%, -50%);
         color: #fff;
 
-        .banner-heading{
+        .banner-heading {
             font-size: 80px;
             font-weight: 600;
             margin-bottom: 10px;
-           text-transform: uppercase;
-           line-height: 100px;
+            text-transform: uppercase;
+            line-height: 100px;
         }
-        .sub-heading{
+
+        .sub-heading {
             font-size: 60px;
             font-weight: 600;
             margin-bottom: 10px;
-           font-family: $ternary-font;
-           line-height: 80px;
+            font-family: $ternary-font;
+            line-height: 80px;
 
         }
-        a{
+
+        a {
             padding: 10px 30px;
             background-color: $primary-color;
             text-transform: uppercase;
@@ -32,12 +35,13 @@
     }
 }
 
-.banner-section{
-    .react-multi-carousel-item{
-        &:nth-child(even){
-            .banner-items{
+.banner-section {
+    .react-multi-carousel-item {
+        &:nth-child(even) {
+            .banner-items {
                 position: relative;
-                .banner-content{
+
+                .banner-content {
                     text-align: end;
                     position: absolute;
                     top: 50%;
@@ -48,4 +52,42 @@
             }
         }
     }
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+
+    &:first-child,
+    &:nth-child(3) {
+        grid-row: span 2;
+    }
+
+    .title {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    img {
+        transition: all 0.3s ease-in-out;
+        height: 100%;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.catagory-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
 }

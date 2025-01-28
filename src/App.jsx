@@ -1,4 +1,5 @@
 import BannerSlider from "./component/Banner"
+import Category from "./component/Category"
 import Footer from "./component/Footer"
 import Header from "./component/Header"
 function App() {
@@ -13,9 +14,13 @@ function App() {
         <div className="section-heading text-center">
           <span>MADE THE HARD WAY</span>
           <h2 className="section-title">FEATURED CATEGORIES</h2>
-</div>
-
+          <p>Basel & Co. is a powerful eCommerce theme for Shopify. Visit our shop page to see all main features for Your Store</p>
+        </div>
+        <div className="catagory-wrapper">
+          <Category/>
+        </div>
       </section>
+
       <Footer />
 
     </>

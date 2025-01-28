@@ -1,4 +1,5 @@
 import Logo from "../assets/logo.svg"
+import { Link } from "react-router"
 function Header() {
     return (
         <header className="header">
@@ -8,20 +9,21 @@ function Header() {
                     <li><a href=""><i className="bi bi-person-fill"></i> My account</a></li>
                     <li><a href="">  Cart</a></li>
                     <li><a href="">  Our location </a></li>
-                    <li><a href="">  Contact us</a></li>
+                    <li><Link to={"/about"}>About us</Link></li>
+                    <li> <Link to={"/contact"}>Contact us</Link></li>
                 </ul>
             </div>
             <div className="navigation-bar py-3 px-5 d-flex justify-content-between align-items-center">
                 <nav>
                     <ul className="d-flex gap-3">
-                        <li><a href="">Home</a></li>
+                        <li><Link to={"/"}>Home</Link></li>
                         <li><a href="">Shop</a></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">Pages</a></li>
                         <li><a href="">Features</a></li>
                     </ul>
                 </nav>
-                <a href=""><img src={Logo} alt="" /></a>
+                <Link to={"/"}> <img src={Logo} alt="" /></Link>
                 <div className="right-content">
                     <button>Login / Register</button>
                 </div>
