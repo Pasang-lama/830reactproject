@@ -8,6 +8,7 @@ import "../src/scss/style.scss"
 import { BrowserRouter, Routes, Route } from 'react-router'
 import Aboutus from './pages/Aboutus.jsx'
 import Error from './pages/Error.jsx'
+import Reacthook from './pages/Reacthook.jsx'
 
 createRoot(document.getElementById('root')).render(
 <BrowserRouter>
@@ -15,6 +16,8 @@ createRoot(document.getElementById('root')).render(
     <Route path="/" element={<App />} />
     <Route path="/about" element={<Aboutus />} />
     <Route path="/*" element={<Error />} />
+    <Route path="/hook" element={<Reacthook/>} />
+
 
 
   </Routes>

@@ -37,7 +37,6 @@ function Category() {
                 </div>
             ))
         }
-           
         </>
     )
 }
