@@ -17,7 +17,7 @@ function Header() {
                 <nav>
                     <ul className="d-flex gap-3">
                         <li><Link to={"/"}>Home</Link></li>
-                        <li><a href="">Shop</a></li>
+                        <li><Link to="/produt">Shop</Link></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">Pages</a></li>
                         <li><a href="">Features</a></li>

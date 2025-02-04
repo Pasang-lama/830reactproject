@@ -91,3 +91,19 @@
     grid-template-columns: 2fr 1fr 1fr;
     gap: 20px;
 }
+
+.product-card{
+    padding: 10px;
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 5px;
+    img{
+        object-fit: scale-down;
+    }
+    .price{
+        color: $primary-color;
+        font-weight: 900;
+    }
+    .category{
+        color: gray;
+    }
+}
